@@ -1,0 +1,15 @@
+{
+    "id": "db-staging-failed", 
+    "container": {
+      "docker": {
+        "image": "localhost:5000/devopsly200-db-stagingstage-failed",
+        "network": "BRIDGE",
+        "portMappings": [
+          {"containerPort": 27017, "hostPort": 31526, "servicePort": 27017}
+        ]
+      }
+    },
+    "cpus": 0.2,
+    "mem": 100.0,
+    "instances": 1
+}
